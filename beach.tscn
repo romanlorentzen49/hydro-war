@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://ch2gju80cgmxr"]
+
+[ext_resource type="PackedScene" uid="uid://coqutprkdluhf" path="res://the_beach/scene.gltf" id="1_mw63k"]
+[ext_resource type="Texture2D" uid="uid://dnt42b7xca2ur" path="res://fine_sand_material/textures/Material.001_baseColor.png" id="2_sf6hb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fnli2"]
+albedo_texture = ExtResource("2_sf6hb")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_75qst"]
+albedo_texture = ExtResource("2_sf6hb")
+
+[node name="beach" instance=ExtResource("1_mw63k")]
+
+[node name="Plane_Material_001_0" parent="Sketchfab_model/8f7f8d73da0c4d10bbd3bc4a4488a5cd_fbx/RootNode/Plane" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 1.42109e-14, 0, 0, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_fnli2")
+surface_material_override/0 = SubResource("StandardMaterial3D_75qst")
+
+[node name="Plane_001" parent="Sketchfab_model/8f7f8d73da0c4d10bbd3bc4a4488a5cd_fbx/RootNode" index="2"]
+transform = Transform3D(455.271, 0, 0, 0, -7.41731e-05, 389.178, 0, -455.271, -6.34052e-05, 0, 8.66314, 5.81617)
+
+[node name="Plane_044_Material_004_0" parent="Sketchfab_model/8f7f8d73da0c4d10bbd3bc4a4488a5cd_fbx/RootNode/Circle_002/Plane_044" index="0"]
+transform = Transform3D(1, 0, 9.31323e-10, 0, 1, 1.49012e-08, 3.72529e-09, 0, 1, -0.00485802, 0.0236759, -0.0153048)
